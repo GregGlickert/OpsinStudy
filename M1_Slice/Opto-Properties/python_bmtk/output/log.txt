@@ -1,0 +1,11 @@
+2025-03-16 12:10:26,431 [INFO] Created log file
+2025-03-16 12:10:26,504 [INFO] Building cells.
+2025-03-16 12:10:26,511 [INFO] Building recurrent connections
+2025-03-16 12:10:26,521 [INFO] Setting up optogenetic stimulation
+2025-03-16 12:10:26,521 [INFO] Probability of infection is 1
+2025-03-16 12:10:26,525 [INFO] Number of light sources is 149
+2025-03-16 12:11:11,128 [INFO] Running simulation for 200.000 ms with the time step 0.050 ms
+2025-03-16 12:11:11,128 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
+2025-03-16 12:11:11,128 [INFO] Block save every 4000 steps
+2025-03-16 12:11:15,064 [INFO]     step:4000 t_sim:200.00 ms
+2025-03-16 12:11:15,174 [INFO] Simulation completed in 4.047 seconds 

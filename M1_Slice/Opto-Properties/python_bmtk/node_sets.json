@@ -1,0 +1,11 @@
+{
+  "biophysical_nodes": {
+    "model_type": "biophysical"
+  },
+  "PN_cells":{
+    "pop_name": "PN"
+  },
+  "point_nodes": {
+    "model_type": "point_process"
+  }
+}

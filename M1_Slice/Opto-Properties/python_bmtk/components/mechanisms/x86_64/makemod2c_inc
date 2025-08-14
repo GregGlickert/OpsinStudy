@@ -1,0 +1,216 @@
+./AMPA_NMDA_STP.c: ../modfiles//AMPA_NMDA_STP.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "AMPA_NMDA_STP.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./AMPA_NMDA_STP.o: ./AMPA_NMDA_STP.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./cadad.c: ../modfiles//cadad.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cadad.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./cadad.o: ./cadad.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./cal2.c: ../modfiles//cal2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cal2.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./cal2.o: ./cal2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./can_mig.c: ../modfiles//can_mig.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "can_mig.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./can_mig.o: ./can_mig.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./ChR2H134R_william_event.c: ../modfiles//ChR2H134R_william_event.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ChR2H134R_william_event.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./ChR2H134R_william_event.o: ./ChR2H134R_william_event.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./ChR2H134R_william.c: ../modfiles//ChR2H134R_william.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ChR2H134R_william.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./ChR2H134R_william.o: ./ChR2H134R_william.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./ChR2H134R_william_original.c: ../modfiles//ChR2H134R_william_original.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ChR2H134R_william_original.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./ChR2H134R_william_original.o: ./ChR2H134R_william_original.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./GABA_AB_STP.c: ../modfiles//GABA_AB_STP.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "GABA_AB_STP.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./GABA_AB_STP.o: ./GABA_AB_STP.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./GABA_A_STP.c: ../modfiles//GABA_A_STP.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "GABA_A_STP.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./GABA_A_STP.o: ./GABA_A_STP.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./gap.c: ../modfiles//gap.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "gap.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./gap.o: ./gap.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Gfluct.c: ../modfiles//Gfluct.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Gfluct.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./Gfluct.o: ./Gfluct.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./h_kole.c: ../modfiles//h_kole.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "h_kole.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./h_kole.o: ./h_kole.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./imCA3.c: ../modfiles//imCA3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "imCA3.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./imCA3.o: ./imCA3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kap_BS.c: ../modfiles//kap_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kap_BS.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./kap_BS.o: ./kap_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kBK.c: ../modfiles//kBK.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kBK.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./kBK.o: ./kBK.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdmc_BS.c: ../modfiles//kdmc_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdmc_BS.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./kdmc_BS.o: ./kdmc_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdr_BS.c: ../modfiles//kdr_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdr_BS.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./kdr_BS.o: ./kdr_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrCA3.c: ../modfiles//kdrCA3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdrCA3.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./kdrCA3.o: ./kdrCA3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrinter.c: ../modfiles//kdrinter.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdrinter.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./kdrinter.o: ./kdrinter.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./leak.c: ../modfiles//leak.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "leak.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./leak.o: ./leak.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./nainter.c: ../modfiles//nainter.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nainter.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./nainter.o: ./nainter.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./napCA3.c: ../modfiles//napCA3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "napCA3.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./napCA3.o: ./napCA3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./natCA3.c: ../modfiles//natCA3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "natCA3.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./natCA3.o: ./natCA3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./nax_BS.c: ../modfiles//nax_BS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nax_BS.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./nax_BS.o: ./nax_BS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./RhO3.c: ../modfiles//RhO3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "RhO3.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./RhO3.o: ./RhO3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./RhO4_Nikolic.c: ../modfiles//RhO4_Nikolic.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "RhO4_Nikolic.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./RhO4_Nikolic.o: ./RhO4_Nikolic.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./vecevent_coreneuron.c: ../modfiles//vecevent_coreneuron.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vecevent_coreneuron.mod" -o "/home/gjgpb9/feng_opto_stim/python_bmtk/components/mechanisms/x86_64")
+
+./vecevent_coreneuron.o: ./vecevent_coreneuron.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+

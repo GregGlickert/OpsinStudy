@@ -1,0 +1,83 @@
+{
+  "network": "circuit_config.json",
+  "simulation": "simulation_config.json",
+  "config_path": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/config.json",
+  "config_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk",
+  "components": {
+    "biophysical_neuron_models_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/biophysical_neuron_models",
+    "filter_models_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/filter_models",
+    "mechanisms_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/mechanisms",
+    "morphologies_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/morphologies",
+    "point_neuron_models_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/point_neuron_models",
+    "synaptic_models_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/synaptic_models",
+    "templates_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/templates",
+    "__pycache___dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/components/__pycache__"
+  },
+  "networks": {
+    "nodes": [
+      {
+        "nodes_file": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/network/bio_net_nodes.h5",
+        "node_types_file": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/network/bio_net_node_types.csv"
+      }
+    ],
+    "edges": [],
+    "gap_juncs": []
+  },
+  "target_simulator": "NEURON",
+  "run": {
+    "tstart": 0.0,
+    "tstop": 200.0,
+    "dt": 0.05,
+    "dL": 20.0,
+    "spike_threshold": -15.0,
+    "nsteps_block": 5000
+  },
+  "conditions": {
+    "celsius": 34.0,
+    "v_init": -70.0
+  },
+  "inputs": {
+    "current_clamp_1": {
+      "input_type": "current_clamp",
+      "module": "IClamp",
+      "node_set": {
+        "node_ids": [
+          1,
+          4,
+          7,
+          12,
+          19
+        ]
+      },
+      "amp": 0.05,
+      "delay": 10000.0,
+      "duration": 500.0
+    }
+  },
+  "output": {
+    "log_file": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/output/log.txt",
+    "output_dir": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/output",
+    "spikes_file": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/output/spikes.h5"
+  },
+  "reports": {
+    "membrane_potential": {
+      "module": "membrane_report",
+      "cells": "all",
+      "variable_name": "v",
+      "sections": "soma",
+      "file_name": "v_traces.h5"
+    }
+  },
+  "node_sets_file": "/home/gjgpb9/cortex_modeling/OpsinStudy/M1_Slice/Opto-Properties/python_bmtk/node_sets.json",
+  "node_sets": {
+    "biophysical_nodes": {
+      "model_type": "biophysical"
+    },
+    "PN_cells": {
+      "pop_name": "PN"
+    },
+    "point_nodes": {
+      "model_type": "point_process"
+    }
+  }
+}

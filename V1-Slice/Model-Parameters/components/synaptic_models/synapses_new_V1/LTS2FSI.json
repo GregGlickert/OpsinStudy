@@ -1,0 +1,11 @@
+{
+    "level_of_detail": "GABA_A_STP",
+    "initW": 0.5,
+    "oldW": 0.3,
+    "e_GABAA": -75.0,
+    "tau_r_GABAA": 4,
+    "tau_d_GABAA": 14,
+    "Use": 0.3,
+    "Dep": 25.0,
+    "Fac": 200.0
+}
